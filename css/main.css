@@ -57,7 +57,7 @@ nav{
 }
 .bg-ovr{
     width: 100%;
-    height: 800px;
+    height: auto;
     background-color: #fffafa;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,6 @@ nav{
     width: 25%;
     height: 200px;
     color: black;
-    background-color: aqua;
     flex-direction: column;
     justify-content: space-around; 
 }
@@ -177,27 +176,33 @@ nav{
     border-radius: 5px;
 }
 .ovr-info-box{
-    width: 65%;
-    height: 1200px;
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+}
+.ovr-info-txt{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
 }
 .ovr-info{ 
     color: black;
     font-weight: 200;
+    font-size: 20px;
+    padding-top: 10px;
 }
 .ovr-img-box{
-    width: 30%;
+    width: 40%;
     height: auto;
     display: flex;
-    margin-top: 150px;
-    margin-left: 50px;
+
 }
 #ovr-img{
-    width: 300px;
-    height: 300px;
+    width: 175px;
+    border-radius: 5px;
 }
 .phone-box{
     width: 100%;
