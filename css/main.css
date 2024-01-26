@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    cursor: crosshair;
 }
 a{
     text-decoration: none;
@@ -21,13 +22,13 @@ nav{
     width: 100%;
     height: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#main-txt{
+.nav-txt a{
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(#b5b5b5, #b5b5b5);
+    background-image: linear-gradient(#825fe9, #825fe9);
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 50%;
@@ -35,22 +36,29 @@ nav{
     transition: background-size 0.3s ease-in-out, color 0.3s;
 }
 
-#main-txt:hover, #main-txt:active, #main-txt:focus{
+.nav-txt a:hover, .nav-txt a:active, .nav-txt a:focus{
     color: #b5b5b5;
     background-size: 100% 0.1em;
 }
 .bg{
     width: 100%;
     height: 800px;
-    background-color: #181818;
+    background-color: #fffafa;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.bg-prj, .bg-ovr{
+.bg-prj{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fffafa;
+    flex-direction: column;
+}
+.bg-ovr{
     width: 100%;
     height: 800px;
-    background-color: #181818;
+    background-color: #fffafa;
     display: flex;
     flex-direction: column;
 }
@@ -59,15 +67,19 @@ nav{
     height: 200px;
     font-size: 40px;
     padding-right: 200px;
-    color: white;
+    color: black;
 }
 .name{
     font-weight: 100;
 }
 .smallinfo{
+    display: flex;
     width: 25%;
     height: 200px;
-    color: white;   
+    color: black;
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: space-around; 
 }
 #smallinfo{
     font-weight: 100;
@@ -75,11 +87,10 @@ nav{
 }
 #moreinfo{
     display: flex;
-    margin-top: 65px;
     font-size: 25px;
     text-decoration: none;
-    color: white;
-    background-image: linear-gradient(#b5b5b5, #b5b5b5);
+    color: black;
+    background-image: linear-gradient(#825fe9, #825fe9);
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 0%;
@@ -87,8 +98,7 @@ nav{
     transition: background-size 0.3s ease-in-out, color 0.3s;
 }
 #moreinfo:hover{
-    color: #b5b5b5;
-    background-size: 70% 0.1em;
+    background-size: 65% 0.1em;
 }
 .footer{
     width: 100%;
@@ -106,7 +116,7 @@ nav{
 #email{
     text-decoration: none;
     color: white;
-    background-image: linear-gradient(#b5b5b5, #b5b5b5);
+    background-image: linear-gradient(#825fe9, #825fe9);
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 50%;
@@ -133,49 +143,54 @@ nav{
     color: #b5b5b5;
     background-size: 100% 0.1em;
 }
-.project-title-box, .ovr-title-box{
+.project-title-box, .ovr-title-box, .contact-title-box{
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 .project-title, .ovr-title, .contact-title{
-    color: white;
-    font-size: 60px;
+    color: black;
+    font-size: 50px;
 }
-.project-1-box, .ovr-img-box{
+.project-box, .ovr-img-box{
     width: 100%;
     height: 500px;
-    margin-top: 75px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
-.project-1-name{
-    color: white;
+.project-name-box{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
-#prj-1-img, #ovr-img{
-    width: 60%;
-    height: 425px;
-    margin-top: 20px;
-    border-radius: 20px;
+.project-name{
+    color: black;
+    font-size: 25px;
+}
+#prj-img, #ovr-img{
+    width: 50%;
+    border-radius: 5px;
 }
 .ovr-info-box{
-    width: 80%;
+    width: 65%;
     height: 1200px;
-    margin-top: 75px;
-    margin-left: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .ovr-info{ 
-    color: white;
+    color: black;
     font-weight: 200;
 }
 .ovr-img-box{
-    width: 25%;
+    width: 30%;
+    height: auto;
     display: flex;
     margin-top: 150px;
     margin-left: 50px;
@@ -205,7 +220,7 @@ nav{
 .bg-con{
     width: 100%;
     height: 800px;
-    background-color: #181818;
+    background-color: #fffafa;
     display: flex;
     flex-direction: column;
 }
@@ -215,8 +230,8 @@ nav{
     font-size: 25px;
     font-weight: 100;
     text-decoration: none;
-    color: white;
-    background-image: linear-gradient(#b5b5b5, #b5b5b5);
+    color: black;
+    background-image: linear-gradient(#825fe9, #825fe9);
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 50%;
@@ -224,7 +239,6 @@ nav{
     transition: background-size 0.3s ease-in-out, color 0.3s;
 }
 #telefoon:hover, #e_mail:hover{
-    color: #b5b5b5;
     background-size: 100% 0.1em;
 }
 .contact-box{
@@ -235,15 +249,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.contact-title-box{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-}
 #contact-text{
-    color: white;
-    font-weight: 200;
+    color: black;
     justify-content: center;
     margin-bottom: 100px;
 }
