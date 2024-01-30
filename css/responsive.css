@@ -85,4 +85,20 @@
     color: black;
     font-size: 40px;
   }
+  .project-box{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-desc-box{
+    display: flex;
+    width: 100%;
+  }
+  #prj-img, #ovr-img{
+    width: 90%;
+    border-radius: 5px;
+  }
 }
