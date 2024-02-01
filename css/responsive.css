@@ -125,4 +125,21 @@
   .ovr-info-under{
     font-size: 15px;
   }
+  .contact-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  #contact-text{
+    display: none;
+  }
+  #contact-r-text{
+    display: flex;
+    font-size: 20px;
+    
+  }
+  #telefoon, #e_mail{
+    margin-top: 100px;
+    font-size: 20px;
+  }
 }
