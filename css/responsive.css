@@ -100,4 +100,29 @@
     width: 90%;
     border-radius: 5px;
   }
+
+  .ovr-info-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .ovr-info-txt, .ovr-info-txt-under{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .ovr-info{
+    font-size: 17px;
+  }
+  .ovr-info-box-under{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .ovr-info-under{
+    font-size: 15px;
+  }
 }

@@ -209,12 +209,22 @@ nav{
     display: flex;
     width: 33%;
     flex-direction: column;
+    align-items: center;
 }
 .ovr-info{ 
     color: black;
     font-weight: 200;
     font-size: 20px;
     padding-top: 5px;
+}
+.ovr-info-txt-under{
+    display: flex;
+    width: 66%;
+    flex-direction: column;
+    align-items: center;
+}
+.ovr-info-under{
+    font-size: 20px;
 }
 .ovr-info-img{
     display: flex;
